@@ -2,18 +2,22 @@
 int a[9];
 int used[9];
 int n=8;
-int num=0;
 int step;
 void f(step){
 	if(step>n)
 	{	
 	int i;
 	for(i=1;i<=n;i++){
-		printf("%d ",a[i]);
-	}printf("\n"); 
-	 num++;
+        if(i==n){
+		printf("%d\n",a[i]);
+        }else{
+            printf("%d ",a[i]);
+        }
+}   
 		return;
-}    int i;
+}    
+int i;
+          
 for(i=1;i<=n;i++){
 	if(used[i]==0){
 	a[step]=i;
@@ -25,6 +29,5 @@ for(i=1;i<=n;i++){
 }
 int main()
 { f(1);
-printf("%d",num);
 return 0;	
 } 

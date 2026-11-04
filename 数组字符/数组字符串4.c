@@ -2,7 +2,7 @@
 int main()
 {int L,M,i,l,r;
 int count=0;
-int tree[1000];
+int tree[10000];
 scanf("%d %d",&L,&M);
 for(i=0;i<=L;i++){
 	tree[i]=1;
@@ -17,7 +17,7 @@ for(i=0;i<=L;i++){
 	count++;
 	}
 }
-printf("剩下的树的个数为%d",L+1-count);
+printf("%d",L+1-count);
 
 	
 	

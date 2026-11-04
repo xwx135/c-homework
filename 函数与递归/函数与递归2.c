@@ -47,7 +47,7 @@ int i;
 for(i=1;i<=day;i++){
 	ans+=f(i,x);
 }
-printf("%d",ans);
+printf("%d\n",ans);
 }
 
 

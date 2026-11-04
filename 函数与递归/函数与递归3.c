@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main()
-{int t,i,p=1,n,m=1,num,rev;
+{int t,i,p=1,n,m=1,num,rev=0;
 scanf("%d",&t);
 n=t/10;
 while(n>0){
@@ -16,9 +16,9 @@ for(i=2;i*i<=num;i++){
 	}
 }
 if(p==0){
-	printf("noprime");
-}else{
 	printf("prime");
+}else{
+	printf("noprime");
 }
 	return 0;
  } 

@@ -18,7 +18,7 @@ int getmid(int a,int b){
 }
 int main()
 {char s[35];
-scanf("%s",&s);
+while(scanf("%s",s)!=EOF){
 int visited[10]={0};
 int pass=1;
 int len;
@@ -52,7 +52,7 @@ for(i=1;i<len&&pass==1;i++){
 	printf("YES");	
 }else{
 	printf("NO");}
-
+}
 	
 	
 	
